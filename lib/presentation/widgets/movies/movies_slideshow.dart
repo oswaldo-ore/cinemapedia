@@ -39,7 +39,11 @@ class _Slide extends StatelessWidget {
     final decoration = BoxDecoration(
       borderRadius: BorderRadius.circular(20),
       boxShadow: const [
-        BoxShadow(color: Colors.black45, blurRadius: 10, offset: Offset(0, 10)),
+        BoxShadow(
+          color: Colors.black45,
+          blurRadius: 10,
+          offset: Offset(0, 10),
+        ),
       ],
     );
     return Padding(

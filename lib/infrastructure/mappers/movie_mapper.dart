@@ -16,8 +16,9 @@ class MovieMapper {
         popularity: moviedb.popularity,
         posterPath: moviedb.posterPath != ''
             ? 'https://image.tmdb.org/t/p/w500${moviedb.posterPath}'
-            : 'no-poster',
-        releaseDate: moviedb.releaseDate,
+            : 'https://mir-s3-cdn-cf.behance.net/project_modules/fs/fb3ef66312333.5691dd2253378.jpg',
+        releaseDate:
+            moviedb.releaseDate != null ? moviedb.releaseDate! : DateTime.now(),
         title: moviedb.title,
         video: moviedb.video,
         voteAverage: moviedb.voteAverage,
